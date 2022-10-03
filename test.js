@@ -37,4 +37,21 @@ function conversion (seconds, minutes, hours) {
     let result = (seconds) + (minutes * 60) + (hours * 3600)
     return result;
 }
-console.log(conversion(0, 0, 365));
+console.log(conversion(0,1,0));
+
+let wholePrice = 10;
+let reducedPrice = 8;
+let student = true;
+
+//price cinema 
+if(student === true){
+    console.log("your reduced price is "+reducedPrice+"$")
+}
+else{
+    console.log("your full price is " + wholePrice)
+}
+
+//maximum
+let array = [0,5,10, 24];
+let max = Math.max(...array);
+console.log(max)
